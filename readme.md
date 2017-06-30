@@ -24,6 +24,8 @@ if (isDev) {
 }
 ```
 
+Can be overridden by setting the `ELECTRON_IS_DEV` environment variable to `1`.
+
 
 ## Related
 
