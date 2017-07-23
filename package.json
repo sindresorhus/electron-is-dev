@@ -1,40 +1,39 @@
 {
-  "name": "electron-is-dev",
-  "version": "0.3.0",
-  "description": "Check if Electron is running in development",
-  "license": "MIT",
-  "repository": "sindresorhus/electron-is-dev",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "scripts": {
-    "test": "xo"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "electron",
-    "dev",
-    "development",
-    "mode",
-    "prod",
-    "production",
-    "detect",
-    "check",
-    "debug",
-    "app"
-  ],
-  "devDependencies": {
-    "xo": "*"
-  },
-  "xo": {
-    "esnext": true,
-    "envs": [
-      "node",
-      "browser"
-    ]
-  }
+	"name": "electron-is-dev",
+	"version": "0.3.0",
+	"description": "Check if Electron is running in development",
+	"license": "MIT",
+	"repository": "sindresorhus/electron-is-dev",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"scripts": {
+		"test": "xo"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"electron",
+		"dev",
+		"development",
+		"mode",
+		"prod",
+		"production",
+		"detect",
+		"check",
+		"debug",
+		"app"
+	],
+	"devDependencies": {
+		"xo": "*"
+	},
+	"xo": {
+		"envs": [
+			"node",
+			"browser"
+		]
+	}
 }

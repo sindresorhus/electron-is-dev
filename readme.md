@@ -8,7 +8,7 @@ Useful for enabling debug features only during development.
 ## Install
 
 ```
-$ npm install --save electron-is-dev
+$ npm install electron-is-dev
 ```
 
 
