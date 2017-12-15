@@ -1,6 +1,6 @@
 # electron-is-dev
 
-> Check if [Electron](http://electron.atom.io) is running in development
+> Check if [Electron](https://electronjs.org) is running in development
 
 Useful for enabling debug features only during development.
 
