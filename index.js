@@ -1,5 +1,6 @@
 'use strict';
-const getFromEnv = parseInt(process.env.ELECTRON_IS_DEV, 10) === 1;
-const isEnvSet = 'ELECTRON_IS_DEV' in process.env;
+const proc = typeof window !== 'undefined' && typeof window.process !== 'undefined' ? window.process : process;
+const getFromEnv = parseInt(proc.env.ELECTRON_IS_DEV, 10) === 1;
+const isEnvSet = 'ELECTRON_IS_DEV' in proc.env;
 
-module.exports = isEnvSet ? getFromEnv : (process.defaultApp || /node_modules[\\/]electron[\\/]/.test(process.execPath));
+module.exports = isEnvSet ? getFromEnv : (proc.defaultApp || /node_modules[\\/]electron[\\/]/.test(proc.execPath));
