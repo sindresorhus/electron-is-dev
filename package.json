@@ -28,12 +28,6 @@
 		"app"
 	],
 	"devDependencies": {
-		"xo": "*"
-	},
-	"xo": {
-		"envs": [
-			"node",
-			"browser"
-		]
+		"xo": "^0.23.0"
 	}
 }

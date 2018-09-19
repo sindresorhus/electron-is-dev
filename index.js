@@ -1,5 +1,7 @@
 'use strict';
-const getFromEnv = parseInt(process.env.ELECTRON_IS_DEV, 10) === 1;
-const isEnvSet = 'ELECTRON_IS_DEV' in process.env;
+const {app} = require('electron');
 
-module.exports = isEnvSet ? getFromEnv : (process.defaultApp || /node_modules[\\/]electron[\\/]/.test(process.execPath));
+const isEnvSet = 'ELECTRON_IS_DEV' in process.env;
+const getFromEnv = parseInt(process.env.ELECTRON_IS_DEV, 10) === 1;
+
+module.exports = isEnvSet ? getFromEnv : !app.isPackaged;
