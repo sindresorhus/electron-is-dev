@@ -1,7 +1,9 @@
 'use strict';
 const electron = require('electron');
 
-if (typeof electron === "string") throw new Error("Not running in an Electron environment!")
+if (typeof electron === 'string') {
+	throw new TypeError('Not running in an Electron environment!');
+}
 
 const app = electron.app || electron.remote.app;
 
