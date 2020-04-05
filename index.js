@@ -1,6 +1,10 @@
 'use strict';
 const electron = require('electron');
 
+if (typeof electron === 'string') {
+	throw new TypeError('Not running in an Electron environment!');
+}
+
 const app = electron.app || electron.remote.app;
 
 const isEnvSet = 'ELECTRON_IS_DEV' in process.env;
