@@ -9,7 +9,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: []
+        node-version:
+          - 14
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
