@@ -4,7 +4,7 @@
 
 Useful for enabling debug features only during development.
 
-You can use this module in the Electron main process.
+This package must be used from the Electron main process.
 
 
 ## Install
