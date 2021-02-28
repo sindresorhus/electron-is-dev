@@ -6,7 +6,6 @@ Useful for enabling debug features only during development.
 
 This package must be used from the Electron main process.
 
-
 ## Install
 
 ```
@@ -14,7 +13,6 @@ $ npm install electron-is-dev
 ```
 
 *Requires Electron 3 or later.*
-
 
 ## Usage
 
@@ -30,13 +28,7 @@ if (isDev) {
 
 You can force development mode by setting the `ELECTRON_IS_DEV` environment variable to `1`.
 
-
 ## Related
 
 - [electron-util](https://github.com/sindresorhus/electron-util) - Useful utilities for developing Electron apps
 - [electron-debug](https://github.com/sindresorhus/electron-debug) - Adds useful debug features to your Electron app
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)

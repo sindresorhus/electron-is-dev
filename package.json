@@ -4,10 +4,11 @@
 	"description": "Check if Electron is running in development",
 	"license": "MIT",
 	"repository": "sindresorhus/electron-is-dev",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"scripts": {
 		"test": "xo && tsd"
@@ -29,7 +30,7 @@
 		"app"
 	],
 	"devDependencies": {
-		"tsd": "^0.7.2",
-		"xo": "^0.24.0"
+		"tsd": "^0.14.0",
+		"xo": "^0.38.1"
 	}
 }
