@@ -28,6 +28,12 @@ if (isDev) {
 
 You can force development mode by setting the `ELECTRON_IS_DEV` environment variable to `1`.
 
+## FAQ
+
+### How is this different than [`app.isPackaged`](https://www.electronjs.org/docs/api/app#appispackaged-readonly)?
+
+This package existed long before that property. The benefit of this package is that you can override the value using an environment variable.
+
 ## Related
 
 - [electron-util](https://github.com/sindresorhus/electron-util) - Useful utilities for developing Electron apps
