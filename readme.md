@@ -45,10 +45,10 @@ const isDev = require('electron-is-dev');
 contextBridge.exposeInMainWorld('isDev', isDev);
 ```
 
-You can then access it in the `window` global from the renderer process:
+You can then access it in `globalThis` from the renderer process:
 
 ```js
-console.log(window.isDev);
+console.log(globalThis.isDev);
 ```
 
 ## Related
