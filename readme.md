@@ -34,6 +34,23 @@ You can force development mode by setting the `ELECTRON_IS_DEV` environment vari
 
 This package existed long before that property. The benefit of this package is that you can override the value using an environment variable.
 
+### How do I use this in the renderer process?
+
+You can use [`contextBridge`](https://www.electronjs.org/docs/latest/api/context-bridge) in the [preload script](https://www.electronjs.org/docs/latest/tutorial/tutorial-preload) to manually expose the variable:
+
+```js
+const {contextBridge} = require('electron');
+const isDev = require('electron-is-dev');
+
+contextBridge.exposeInMainWorld('isDev', isDev);
+```
+
+You can then access it in the `window` global from the renderer process:
+
+```js
+console.log(window.isDev);
+```
+
 ## Related
 
 - [electron-util](https://github.com/sindresorhus/electron-util) - Useful utilities for developing Electron apps
