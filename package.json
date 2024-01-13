@@ -1,6 +1,6 @@
 {
 	"name": "electron-is-dev",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "Check if Electron is running in development",
 	"license": "MIT",
 	"repository": "sindresorhus/electron-is-dev",
