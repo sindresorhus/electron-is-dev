@@ -10,6 +10,7 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
 	"exports": {
 		"types": "./index.d.ts",
 		"default": "./index.js"
