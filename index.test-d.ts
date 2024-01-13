@@ -1,4 +1,4 @@
 import {expectType} from 'tsd';
-import isDev = require('./index.js');
+import isDev from './index.js';
 
 expectType<boolean>(isDev);

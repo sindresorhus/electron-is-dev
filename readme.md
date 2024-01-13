@@ -8,16 +8,16 @@ This package must be used from the Electron main process.
 
 ## Install
 
-```
-$ npm install electron-is-dev
+```sh
+npm install electron-is-dev
 ```
 
-*Requires Electron 3 or later.*
+*Requires Electron 28 or later.*
 
 ## Usage
 
 ```js
-const isDev = require('electron-is-dev');
+import isDev from 'electron-is-dev';
 
 if (isDev) {
 	console.log('Running in development');
@@ -39,8 +39,8 @@ This package existed long before that property. The benefit of this package is t
 You can use [`contextBridge`](https://www.electronjs.org/docs/latest/api/context-bridge) in the [preload script](https://www.electronjs.org/docs/latest/tutorial/tutorial-preload) to manually expose the variable:
 
 ```js
-const {contextBridge} = require('electron');
-const isDev = require('electron-is-dev');
+import {contextBridge} from 'electron';
+import isDev from 'electron-is-dev';
 
 contextBridge.exposeInMainWorld('isDev', isDev);
 ```

@@ -1,5 +1,5 @@
 /**
-Check if [Electron](https://electronjs.org) is running in development.
+Check if Electron is running in development.
 
 This package must be used from the Electron main process.
 
@@ -7,7 +7,7 @@ You can force development mode by setting the `ELECTRON_IS_DEV` environment vari
 
 @example
 ```
-import isDev = require('electron-is-dev');
+import isDev from 'electron-is-dev';
 
 if (isDev) {
 	console.log('Running in development');
@@ -16,6 +16,6 @@ if (isDev) {
 }
 ```
 */
-declare const electronIsDev: boolean;
+declare const isDev: boolean;
 
-export = electronIsDev;
+export default isDev;

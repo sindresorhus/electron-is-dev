@@ -10,6 +10,14 @@
 		"email": "sindresorhus@gmail.com",
 		"url": "https://sindresorhus.com"
 	},
+	"exports": {
+		"types": "./index.d.ts",
+		"default": "./index.js"
+	},
+	"sideEffects": false,
+	"engines": {
+		"node": ">=18"
+	},
 	"scripts": {
 		"test": "xo && tsd"
 	},
@@ -30,7 +38,7 @@
 		"app"
 	],
 	"devDependencies": {
-		"tsd": "^0.14.0",
-		"xo": "^0.38.1"
+		"tsd": "^0.30.3",
+		"xo": "^0.56.0"
 	}
 }
